@@ -24,8 +24,8 @@ const Students = () => {
 
     return (
         <>
-            <div className='justify-content-center mainDiv p-5'>
-                <h1><b>Registro de Estudiantes</b></h1>
+            <div className='justify-content-center mainDiv p-4 m-5'>
+                <h1 className='mb-4'><b>REGISTRO DE ESTUDIANTES</b></h1>
                 <TextInput
                     labelText={"Nombre"}
                     value={nombre}
@@ -53,7 +53,7 @@ const Students = () => {
                 <h3>Listado estudiantes:</h3>
                 <ol className='list-group list-group-numbered mt-4'>
                     {studentList.map((estudiante, index) => (
-                        <li className='list-group-item' key={index}>Nombre: {estudiante.nombre} | Edad: {estudiante.edad} | Carnet: {estudiante.carnet}</li>
+                        <li className='list-group-item' key={index}>{estudiante.nombre} | Edad: {estudiante.edad} | Carnet: {estudiante.carnet}</li>
                     ))}
                 </ol>
             </div>
