@@ -6,6 +6,9 @@ import {BrowserRouter as Router, Routes, Route} from "react-router"
 import Students from './pages/Students'
 import Nav from './components/Nav'
 import Components from './pages/Components'
+import Card from './pages/Card'
+import Calculator from './pages/Calculator'
+import Tasks from './pages/Tasks'
 
 function App() {
 
@@ -15,7 +18,10 @@ function App() {
         <Nav/>
         <Routes>
           <Route path="/" element={<Students/>}/>
-          <Route path="/components" element={<Components/>}></Route>
+          <Route path="/components" element={<Components/>}/>
+          <Route path='/card' element={<Card/>}/>
+          <Route path='/calculator' element={<Calculator/>}/>
+          <Route path="/tasks" element={<Tasks/>}/>
         </Routes>
       </Router>
     </>

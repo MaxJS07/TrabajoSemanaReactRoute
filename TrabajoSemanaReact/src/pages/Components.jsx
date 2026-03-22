@@ -117,9 +117,9 @@ const Components = () => {
   ]
 
   return (
-    <div>
+    <div className='min-vh-100 d-flex justify-content-center align-items-center flex-column'>
       <div className="my-3">
-        <p className="text-center fs-2 fw-bold text-primary">EJERCICIO 1 - COMPONENTES</p>
+        <p className="text-center fs-2 fw-bold text-primary">COMPONENTES EN REACT</p>
       </div>
 
       <div className="accordion mx-5" id="accordionExample">

@@ -23,9 +23,9 @@ const Students = () => {
     }
 
     return (
-        <>
-            <div className='justify-content-center mainDiv p-4 m-5'>
-                <h1 className='mb-4'><b>REGISTRO DE ESTUDIANTES</b></h1>
+        <div className='min-vh-100 d-flex align-items-center justify-content-center'>
+            <div className='justify-content-center mainDiv p-4 w-75'>
+                <p className="text-center fs-2 fw-bold text-primary">REGISTRO DE ESTUDIANTES</p>
                 <TextInput
                     labelText={"Nombre"}
                     value={nombre}
@@ -57,7 +57,7 @@ const Students = () => {
                     ))}
                 </ol>
             </div>
-        </>
+        </div>
     )
 }
 
